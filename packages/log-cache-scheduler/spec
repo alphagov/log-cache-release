@@ -1,5 +1,5 @@
 ---
-name: log-cache-gateway
+name: log-cache-scheduler
 
 dependencies:
 - golang1.9.4
@@ -18,10 +18,11 @@ files:
 - code.cloudfoundry.org/go-stream-aggregator/*.go # gosub
 - code.cloudfoundry.org/go-stream-aggregator/internal/traverser/*.go # gosub
 - code.cloudfoundry.org/log-cache/*.go # gosub
-- code.cloudfoundry.org/log-cache/cmd/gateway/*.go # gosub
+- code.cloudfoundry.org/log-cache/cmd/scheduler/*.go # gosub
 - code.cloudfoundry.org/log-cache/internal/egress/*.go # gosub
 - code.cloudfoundry.org/log-cache/internal/groups/*.go # gosub
 - code.cloudfoundry.org/log-cache/internal/ingress/*.go # gosub
+- code.cloudfoundry.org/log-cache/internal/metrics/*.go # gosub
 - code.cloudfoundry.org/log-cache/internal/orchestrator/*.go # gosub
 - code.cloudfoundry.org/log-cache/internal/store/*.go # gosub
 - code.cloudfoundry.org/log-cache/internal/tls/*.go # gosub

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -eu
+set -o pipefail
 
 trap "echo Exited!; exit 1;" SIGINT SIGTERM
 
