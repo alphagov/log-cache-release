@@ -37,6 +37,8 @@ properties:
     description: "The cert used to authenticate against the internal CC api"
   cc.key:
     description: "The client private key used to authenticate against the internal CC api"
+  cc.override_hostname:
+    description: "Override the cloud_controller hostname. Used when deploying without Bosh DNS enabled"
   uaa.client_id:
     description: "The client id to authenticate to UAA"
   uaa.client_secret:

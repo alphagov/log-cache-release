@@ -31,3 +31,5 @@ properties:
     description: "TLS certificate for the logs-provider connection"
   logs_provider.tls.key:
     description: "TLS key for the logs-provider connection"
+  logs_provider.override_address:
+    description: "Override the logs provider address. For use when not deploying with Bosh DNS enabled."

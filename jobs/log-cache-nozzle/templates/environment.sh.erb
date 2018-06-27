@@ -1,6 +1,10 @@
 <%
-    l = link('reverse_log_proxy')
-    rlp_addr = "#{l.address}:#{l.p('reverse_log_proxy.egress.port')}"
+    if addr = p('logs_provider.override_address', false)
+      rlp_addr = addr
+    else
+      l = link('reverse_log_proxy')
+      rlp_addr = "#{l.address}:#{l.p('reverse_log_proxy.egress.port')}"
+    end
 %>
 
 # Logs Provider
