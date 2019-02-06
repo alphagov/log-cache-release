@@ -1,6 +1,6 @@
 [submodule "src/code.cloudfoundry.org/log-cache"]
 	path = src/code.cloudfoundry.org/log-cache
-	url = https://github.com/cloudfoundry/log-cache
+	url = https://github.com/alphagov/paas-log-cache
 [submodule "src/github.com/onsi/ginkgo"]
 	path = src/github.com/onsi/ginkgo
 	url = https://github.com/onsi/ginkgo
