@@ -2,12 +2,13 @@
 name: log-cache-blackbox
 
 dependencies:
-- golang1.11.1
+- golang1.11.5
 
 files:
 - code.cloudfoundry.org/go-envstruct/*.go # gosub
 - code.cloudfoundry.org/go-loggregator/rpc/loggregator_v2/*.go # gosub
-- code.cloudfoundry.org/log-cache/cmd/blackbox-test/*.go # gosub
+- code.cloudfoundry.org/log-cache/cmd/blackbox/*.go # gosub
+- code.cloudfoundry.org/log-cache/internal/blackbox/*.go # gosub
 - code.cloudfoundry.org/log-cache/internal/tls/*.go # gosub
 - code.cloudfoundry.org/log-cache/pkg/client/*.go # gosub
 - code.cloudfoundry.org/log-cache/pkg/marshaler/*.go # gosub
